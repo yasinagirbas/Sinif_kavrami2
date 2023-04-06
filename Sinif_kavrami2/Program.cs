@@ -4,20 +4,20 @@
     {
         static void Main(string[] args)
         {
-            //söz dizini 
-            //class sınıf Adı
+            //söz dizini
+            //class sınıf Adıv
             // {
             // (erişim belirleyici ) (veri tipi)  özellik adı;
-            //(erişim Belirleyici ) (geri dönüş tipi) Metotadı(parametre listesi) 
+            //(erişim Belirleyici ) (geri dönüş tipi) Metotadı(parametre listesi)
             //{
             //Metot komutları
             // }
             //}
 
             //Erişim belirleyiciler
-            // * Public her yerden erişilebilir 
-            // * Private sadece tanımlandığı sınıf içerisinde erişilebilir proportiler 
-            // * Internal sadece o proje içerinde erişilebilen kendi projesi içerisinde erişilebilien değişken ve metotlara 
+            // * Public her yerden erişilebilir
+            // * Private sadece tanımlandığı sınıf içerisinde erişilebilir proportiler
+            // * Internal sadece o proje içerinde erişilebilen kendi projesi içerisinde erişilebilien değişken ve metotlara
             // * Protected  sadece tanımlandığı sınıfta ve diğer sınıflardan miras alan kalıtım alan nesne yönelimlidir.
             Calisan calisan1 = new Calisan(); // çalışanın 1 örneğini yaptık
             calisan1.Ad = "Yasin";
@@ -30,8 +30,15 @@
             Calisan calisan2 = new Calisan("deniz","arada",21,"satınalma");
             calisan2.calisanbilgiler();
 
+            Console.WriteLine("**************** calısan 3 ************");
+
+            Calisan calisan3 = new Calisan("deniz","arada",48,"hakkı");
+            calisan3.calisanbilgiler();
+
+
         }
     }
+
 
     class Calisan
     {
@@ -50,7 +57,7 @@
 
         public Calisan()
         {
-            
+
         }
 
 
@@ -62,5 +69,5 @@
             Console.WriteLine("Çalışan Departman:{0}",Departman);
         }
     }
-    
+
 }
